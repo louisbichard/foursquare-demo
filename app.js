@@ -1,1 +1,1 @@
-flovigo = angular.module('flovigo', ['ngRoute']);
+flovigo = angular.module('flovigo', []);
