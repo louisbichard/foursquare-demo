@@ -2,12 +2,11 @@ body {
     // Prevent full page scroll appearing, it looks ugly
     overflow: hidden;
     .main_content_component {
-        margin: 10px;
         display: block;
         .map_component {
             vertical-align: top;
             display: inline-block;
-            width: 65%;
+            width: 60%;
         }
     }
 }
