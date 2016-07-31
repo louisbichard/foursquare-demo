@@ -7,6 +7,7 @@ sass --watch styles/main.scss:styles/main.css
 
 */
 body {
+  font-family: 'Maven Pro', sans-serif;
   overflow: hidden; }
   body .main_content_component {
     display: block; }
@@ -35,7 +36,9 @@ body {
     color: #757575;
     display: inline-block;
     vertical-align: top;
-    width: 34%; }
+    width: 33%; }
+    .restaurant_tile_component .details .properties .stat {
+      font-weight: 900; }
   .restaurant_tile_component .actions {
     margin-left: 100px;
     margin-top: 10px; }
@@ -56,7 +59,7 @@ body {
     z-index: 1;
     width: 500px;
     background-color: #E0F7FA;
-    height: 100px; }
+    height: 52px; }
     .left_nav_component .search_header .search {
       color: #F4511E;
       width: 98%;
@@ -64,11 +67,13 @@ body {
       padding: 10px;
       border-radius: 2px;
       border: 0px; }
+      .left_nav_component .search_header .search:hover {
+        background-color: #FAFAFA; }
       .left_nav_component .search_header .search:focus {
         outline: none; }
   .left_nav_component .search_results {
-    margin-top: 100px;
+    margin-top: 52px;
     overflow-y: scroll;
-    height: calc(100vh - 140px); }
+    height: calc(100vh - 92px); }
 
 /*# sourceMappingURL=main.css.map */

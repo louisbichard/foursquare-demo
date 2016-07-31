@@ -22,7 +22,10 @@
             color: $greyscale-dark;
             display: inline-block;
             vertical-align: top;
-            width: 34%;
+            width: 33%;
+            .stat {
+                font-weight: 900;
+            }
         }
     }
     .actions {

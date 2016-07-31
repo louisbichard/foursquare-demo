@@ -1,5 +1,5 @@
 $left-nav-width: 500px;
-$left-nav-search-header-height: 100px;
+$left-nav-search-header-height: 52px;
 $left-nav-margin: 20px;
 .left_nav_component {
     box-shadow: $shadow;
@@ -11,6 +11,9 @@ $left-nav-margin: 20px;
         background-color: $main-color-lightest;
         height: $left-nav-search-header-height;
         .search {
+            &:hover {
+                background-color: $greyscale-lightest;
+            }
             color: $accent-color-dark;
             width: 98%;
             margin: 5px;
