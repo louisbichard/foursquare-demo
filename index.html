@@ -14,34 +14,12 @@
 </head>
 
 <body ng-controller="mainController">
+
     <div class="container">
         <div>
-            Four square app! TEST:({{test}})
             <input placeholder="Enter search" type="text" ng-model="search">
-            <div ng-repeat="venue in venues">
-                <div>
-                    <h1>{{venue.name}}</h1>
-                    <p>
-                        <a href="{{venue.url}}">Website</a>
-                    </p>
-                    <h2>Categories</h2>
-                    <div ng-repeat="category in venue.categories">
-                        <p>{{category.shortName}}</p>
-                        IMG: {{category.icon}}
-                        <img ng-src="{{category.icon.prefix}}{{category.icon.suffix}}" alt="">
-                    </div>
-                    <h2>Stats</h2>
-                    <p>Check ins: {{venue.stats.checkinsCount}}</p>
-                    <p>User count {{venue.stats.usersCount}}</p>
-                    <p>Tip {{venue.stats.tipCount}}</p>
-                    <h2>Delivery</h2>
-                    <a href="{{venue.delivery.url}}">
-                        Delivery
-                    </a>
-                    <h2>Here now!</h2>
-                    <p>Here now!: {{venue.hereNow.count}}</p>
-                </div>
-            </div>
+            <ad-restaurant-tile venue="venue" ng-repeat="venue in venues">
+            </ad-restaurant-tile>
         </div>
     </div>
     <!-- #SCRIPTS -->
@@ -54,6 +32,7 @@
     <!-- #CORE -->
     <script src="app.js"></script>
     <script src="main.controller.js"></script>
+    <script src="components/restaurant_tile/restaurant_tile.component.js"></script>
 </body>
 
 </html>
