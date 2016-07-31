@@ -4,13 +4,17 @@
     <div ng-repeat="address_field in venue.location.formattedAddress">
         {{address_field}}
     </div>
-
-
-
-<!--     <p>
+    <div class="btn-group">
+        <button type="button" class="btn btn-default" aria-label="Left Align">Website</button>
+        <button type="button" class="btn btn-default" aria-label="Center Align">Menu</button>
+        <button type="button" class="btn btn-default" aria-label="Right Align">Order</button>
+        <button type="button" class="btn btn-default" aria-label="Justify">Phone</button>
+    </div>
+    
+    <!--     <p>
         <a href="{{venue.url}}">Website</a>
     </p> -->
-<!--     <div ng-repeat="category in venue.categories">
+    <!--     <div ng-repeat="category in venue.categories">
         <p>{{category.shortName}}</p>
         IMG: {{category.icon}}
         <img ng-src="{{category.icon.prefix}}{{category.icon.suffix}}" alt="">
