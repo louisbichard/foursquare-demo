@@ -1,1 +1,1 @@
-flovigo = angular.module('flovigo', []);
+andiapp = angular.module('andiapp', []);

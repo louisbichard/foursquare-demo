@@ -1,4 +1,4 @@
-flovigo.controller('mainController', function(
+andiapp.controller('mainController', function(
     $scope,
     $http,
     $q

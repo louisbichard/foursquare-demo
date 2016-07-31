@@ -1,4 +1,4 @@
-flovigo.directive('adRestaurantTile', function() {
+andiapp.directive('adRestaurantTile', function() {
     return {
         restrict: 'E',
         link: function($scope) {
