@@ -11,7 +11,8 @@ $left-nav-margin: 20px;
         background-color: $main-color-lightest;
         height: $left-nav-search-header-height;
         .search {
-            width: 100%;
+            color: $accent-color-dark;
+            width: 98%;
             margin: 5px;
             padding: 10px;
             border-radius: 2px;
