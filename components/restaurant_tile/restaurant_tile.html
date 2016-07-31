@@ -1,15 +1,21 @@
 <div>
-    <h1>{{venue.name}}</h1>
-    <p>
+    <h2>{{venue.name}}</h2>
+    <!-- Todo: convert to paragraph with class -->
+    <div ng-repeat="address_field in venue.location.formattedAddress">
+        {{address_field}}
+    </div>
+
+
+
+<!--     <p>
         <a href="{{venue.url}}">Website</a>
-    </p>
-    <h2>Categories</h2>
-    <div ng-repeat="category in venue.categories">
+    </p> -->
+<!--     <div ng-repeat="category in venue.categories">
         <p>{{category.shortName}}</p>
         IMG: {{category.icon}}
         <img ng-src="{{category.icon.prefix}}{{category.icon.suffix}}" alt="">
-    </div>
-    <h2>Stats</h2>
+    </div> -->
+    <!-- <h2>Stats</h2>
     <p>Check ins: {{venue.stats.checkinsCount}}</p>
     <p>User count {{venue.stats.usersCount}}</p>
     <p>Tip {{venue.stats.tipCount}}</p>
@@ -18,5 +24,5 @@
                         Delivery
                     </a>
     <h2>Here now!</h2>
-    <p>Here now!: {{venue.hereNow.count}}</p>
+    <p>Here now!: {{venue.hereNow.count}}</p> -->
 </div>
