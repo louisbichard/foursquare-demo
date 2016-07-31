@@ -1,3 +1,24 @@
+/* 
 
+
+To use, run the following from the app root
+
+sass --watch styles/main.scss:styles/main.css
+
+*/
+.main_content_component {
+  margin: 10px;
+  display: block; }
+  .main_content_component .left_nav_component {
+    padding: 10px;
+    display: inline-block;
+    width: 25%; }
+  .main_content_component .map_component {
+    display: inline-block;
+    width: 70%; }
+
+.restaurant_tile_component {
+  border-bottom: 1px solid grey;
+  padding: 10px 10px 10px 10px; }
 
 /*# sourceMappingURL=main.css.map */
