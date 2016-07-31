@@ -1,2 +1,8 @@
-<input placeholder="Enter search" type="text" ng-model="search">
-<ad-restaurant-tile venue="venue" ng-repeat="venue in venues"></ad-restaurant-tile>
+<div class="left_nav_component">
+    <div class="search_header">
+        <input class="search" placeholder="Enter search" type="text" ng-model="search">
+    </div>
+    <div class="search_results">
+        <ad-restaurant-tile venue="venue" ng-repeat="venue in venues"></ad-restaurant-tile>
+    </div>
+</div>

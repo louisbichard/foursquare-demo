@@ -1,8 +1,15 @@
 <div class="restaurant_tile_component">
     <h2>{{venue.name}}</h2>
     <!-- Todo: convert to paragraph with class -->
-    <div ng-repeat="address_field in venue.location.formattedAddress">
-        {{address_field}}
+    <div class="details">
+        <div class="address">
+            <div ng-repeat="address_field in venue.location.formattedAddress">
+                {{address_field}}
+            </div>
+        </div>
+        <div class="properties">
+            properties here
+        </div>
     </div>
     <div class="btn-group">
         <button type="button" class="btn btn-default" aria-label="Left Align">Website</button>
@@ -10,7 +17,6 @@
         <button type="button" class="btn btn-default" aria-label="Right Align">Order</button>
         <button type="button" class="btn btn-default" aria-label="Justify">Phone</button>
     </div>
-    
     <!--     <p>
         <a href="{{venue.url}}">Website</a>
     </p> -->

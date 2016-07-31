@@ -1,0 +1,24 @@
+$left-nav-width: 500px;
+$left-nav-search-header-height: 100px;
+.left_nav_component {
+    .search_header {
+        position: fixed;
+        z-index: 1;
+        width: $left-nav-width;
+        padding: 0px 10px 0px 10px;
+        background-color: $main-color-lightest;
+        height: $left-nav-search-header-height;
+        .search {
+            color: red;
+            width: 100%;
+            margin-top: 5px;
+        }
+    }
+    .search_results {
+        margin-top: $left-nav-search-header-height;
+        overflow-y: scroll;
+        height: calc(100vh - #{$left-nav-search-header-height});
+    }
+    display: inline-block;
+    width: $left-nav-width;
+}

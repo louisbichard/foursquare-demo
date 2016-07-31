@@ -1,17 +1,13 @@
-.main_content_component {
-    margin: 10px;
-    display: block;
-    .left_nav_component {
-        height: calc(100vh);
-        overflow-y: scroll;
-        padding: 10px;
-        display: inline-block;
-        width: 25%;
-        // background-color: red;
-    }
-    .map_component {
-        display: inline-block;
-        width: 70%;
-        // background-color: blue;
+body {
+    // Prevent full page scroll appearing, it looks ugly
+    overflow: hidden;
+    .main_content_component {
+        margin: 10px;
+        display: block;
+        .map_component {
+            vertical-align: top;
+            display: inline-block;
+            width: 65%;
+        }
     }
 }

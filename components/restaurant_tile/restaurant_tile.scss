@@ -1,4 +1,19 @@
 .restaurant_tile_component {
     border-bottom: 1px solid grey;
     padding: 10px 10px 10px 10px;
+    .details {
+        color: red;
+        .address {
+            display: inline-block;
+            vertical-align: top;
+            width: 75%;
+            color: blue;
+        }
+        .properties {
+            display: inline-block;
+            vertical-align: top;
+            width: 24%;
+            color: green;
+        }
+    }
 }
