@@ -10,6 +10,8 @@ sass --watch styles/main.scss:styles/main.css
   margin: 10px;
   display: block; }
   .main_content_component .left_nav_component {
+    height: calc(100vh);
+    overflow-y: scroll;
     padding: 10px;
     display: inline-block;
     width: 25%; }

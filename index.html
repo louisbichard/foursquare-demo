@@ -16,9 +16,7 @@
 <body ng-controller="mainController">
     <div class="main_content_component">
         <div class="left_nav_component">
-            <input placeholder="Enter search" type="text" ng-model="search">
-            <ad-restaurant-tile venue="venue" ng-repeat="venue in venues">
-            </ad-restaurant-tile>
+            <ad-left-nav></ad-left-nav>            
         </div>
         <div class="map_component">
             <p>Map goes here!</p>
@@ -43,6 +41,7 @@
     <script src="app.js"></script>
     <script src="main.controller.js"></script>
     <script src="components/restaurant_tile/restaurant_tile.component.js"></script>
+    <script src="components/left_nav/left_nav.component.js"></script>
 </body>
 
 </html>
