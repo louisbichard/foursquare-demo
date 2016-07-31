@@ -1,1 +1,1 @@
-andiapp = angular.module('andiapp', []);
+andiapp = angular.module('andiapp', ['uiGmapgoogle-maps']);

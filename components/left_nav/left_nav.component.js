@@ -6,7 +6,7 @@ andiapp.directive('adLeftNav', function(
         restrict: 'E',
         link: function($scope) {
 
-            $scope.search = "holloway";
+//            $scope.search = "holloway";
 
             $scope.$watch('search', _.debounce(function(val) {
                 if (val) {

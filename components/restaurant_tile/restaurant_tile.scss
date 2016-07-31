@@ -1,4 +1,5 @@
 .restaurant_tile_component {
+    transition: $transition;
     &:hover {
         background-color: $greyscale-lightest;
     }
@@ -30,6 +31,10 @@
     }
     .actions {
         button {
+            transition: $transition;
+            &:focus {
+                outline: none;
+            }
             color: $greyscale-medium;
             &:hover {
                 background-color: $accent-color-lightest;
@@ -37,7 +42,7 @@
                 border: 1px solid transparent;
             }
         }
-        margin-left: 100px;
+        margin-left: 60px;
         margin-top: 10px;
     }
 }

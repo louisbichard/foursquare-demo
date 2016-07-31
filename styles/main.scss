@@ -11,6 +11,8 @@ sass --watch styles/main.scss:styles/main.css
 @import 'index';
 @import 'colors';
 @import 'shadows';
+@import 'transitions';
 @import '../components/restaurant_tile/restaurant_tile';
 @import '../components/left_nav/left_nav';
+@import '../components/intro/intro';
 

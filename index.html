@@ -18,18 +18,13 @@
 <body ng-controller="mainController">
     <div class="main_content_component">
         <ad-left-nav></ad-left-nav>
-        <div class="animated fadeIn map_component">
-            <p>Map goes here!</p>
-            <p>Map goes here!</p>
-            <p>Map goes here!</p>
-            <p>Map goes here!</p>
-            <p>Map goes here!</p>
-            <p>Map goes here!</p>
-            <p>Map goes here!</p>
-            <p>Map goes here!</p>
-            <p>Map goes here!</p>
-        </div>
-    </div>
+        <ad-intro></ad-intro>
+        <ui-gmap-google-map center='map.center' zoom='map.zoom'>
+                <ui-gmap-marker coords="marker.coords" options="marker.options" events="marker.events" idkey="marker.id">
+                </ui-gmap-marker>
+            
+        </ui-gmap-google-map>   
+    </div> 
     <!-- #SCRIPTS -->
     <script src="bower_components/jquery/dist/jquery.min.js"></script>
     <script src="bower_components/angular/angular.min.js"></script>
@@ -37,10 +32,17 @@
     <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
     <script src="bower_components/lodash/dist/lodash.min.js"></script>
     <script src="bower_components/moment/min/moment.min.js"></script>
+
+    <script src='bower_components/angular-simple-logger/dist/angular-simple-logger.min.js'></script>
+    <script src='bower_components/angular-google-maps/dist/angular-google-maps.min.js'></script>
+    <script src='//maps.googleapis.com/maps/api/js?key=AIzaSyDBhFDfM2c6xBiZ5hPgdMQJ6w-v6M54Kcs'></script>
+
+
     <!-- #CORE -->
     <script src="app.js"></script>
     <script src="main.controller.js"></script>
     <script src="components/restaurant_tile/restaurant_tile.component.js"></script>
+    <script src="components/intro/intro.component.js"></script>
     <script src="components/left_nav/left_nav.component.js"></script>
 </body>
 

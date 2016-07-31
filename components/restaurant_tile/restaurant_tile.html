@@ -1,4 +1,4 @@
-<div class="restaurant_tile_component">
+<div class="restaurant_tile_component" ng-click="showOnMap(venue)">
     <h2 class="restaurant_header">{{venue.name}}</h2>
     <!-- Todo: convert to paragraph with class -->
     <div class="details">
@@ -14,10 +14,42 @@
     </div>
     <div class="actions">
         <div class="btn-group">
-            <button type="button" class="btn btn-default" aria-label="Left Align">Website</button>
-            <button type="button" class="btn btn-default" aria-label="Center Align">Menu</button>
-            <button type="button" class="btn btn-default" aria-label="Right Align">Order</button>
-            <button type="button" class="btn btn-default" aria-label="Justify">Phone</button>
+            <button 
+                ng-click="goToWebsite(venue); $event.stopPropagation()"
+                type="button" 
+                class="btn btn-default" 
+                aria-label="Left Align"
+            >
+                <i class="fa fa-laptop" aria-hidden="true"></i>
+                Website
+            </button>
+            <button 
+                ng-click="goMenu(venue); $event.stopPropagation()"
+                type="button" 
+                class="btn btn-default" 
+                aria-label="Center Align"
+            >
+                <i class="fa fa-cutlery" aria-hidden="true"></i>
+                Menu
+            </button>
+            <button 
+                ng-click="goOrder(venue); $event.stopPropagation()"
+                type="button" 
+                class="btn btn-default" 
+                aria-label="Right Align"
+            >
+                <i class="fa fa-cutlery" aria-hidden="true"></i>
+                Order
+            </button>
+            <button 
+                ng-click="goPhone(venue); $event.stopPropagation()"
+                type="button" 
+                class="btn btn-default" 
+                aria-label="Justify"
+            >
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                Phone
+            </button>
         </div>
     </div>
     <!--     <p>

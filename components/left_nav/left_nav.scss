@@ -1,7 +1,8 @@
 $left-nav-width: 500px;
 $left-nav-search-header-height: 52px;
-$left-nav-margin: 20px;
+$left-nav-margin: 50px;
 .left_nav_component {
+    background-color: white;
     box-shadow: $shadow;
     margin: $left-nav-margin;
     .search_header {
@@ -29,6 +30,11 @@ $left-nav-margin: 20px;
         margin-top: $left-nav-search-header-height;
         overflow-y: scroll;
         height: calc(100vh - #{ ($left-nav-search-header-height + ($left-nav-margin * 2) ) });
+        .placeholder {
+            text-align: center;
+            padding-top: 50px;
+            color: $accent-color-medium;
+        }
     }
     display: inline-block;
     width: $left-nav-width;

@@ -4,5 +4,13 @@
     </div>
     <div class="search_results">
         <ad-restaurant-tile venue="venue" ng-repeat="venue in venues"></ad-restaurant-tile>
+
+        <div ng-if="venues.length === 0" class="placeholder">
+            <p>No results found</p>
+        </div>
+        <div ng-if="!venues" class="placeholder">
+            <img src="../../img/arrow.png" alt="">
+            <p>Start searching for culinary delights!</p>
+        </div>
     </div>
 </div>
