@@ -72,7 +72,7 @@ body {
     z-index: 1;
     width: 500px;
     background-color: #FFAB91;
-    height: 52px; }
+    height: 50px; }
     .left_nav_component .search_header .search {
       color: #F4511E;
       width: 98%;
@@ -85,9 +85,9 @@ body {
       .left_nav_component .search_header .search:focus {
         outline: none; }
   .left_nav_component .search_results {
-    margin-top: 52px;
+    margin-top: 50px;
     overflow-y: scroll;
-    height: calc(100vh - 152px); }
+    height: calc(100vh - 150px); }
     .left_nav_component .search_results .placeholder {
       text-align: center;
       padding-top: 20px;
