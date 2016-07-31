@@ -2,25 +2,29 @@ $left-nav-width: 500px;
 $left-nav-search-header-height: 100px;
 $left-nav-margin: 20px;
 .left_nav_component {
-    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow: $shadow;
     margin: $left-nav-margin;
     .search_header {
         position: fixed;
         z-index: 1;
         width: $left-nav-width;
-        padding: 0px 10px 0px 10px;
         background-color: $main-color-lightest;
         height: $left-nav-search-header-height;
         .search {
-            color: red;
             width: 100%;
-            margin-top: 5px;
+            margin: 5px;
+            padding: 10px;
+            border-radius: 2px;
+            border: 0px;
+            &:focus {
+                outline: none;
+            }
         }
     }
     .search_results {
         margin-top: $left-nav-search-header-height;
         overflow-y: scroll;
-        height: calc(100vh - #{ ($left-nav-search-header-height + ($left-nav-margin * 2) ) } );
+        height: calc(100vh - #{ ($left-nav-search-header-height + ($left-nav-margin * 2) ) });
     }
     display: inline-block;
     width: $left-nav-width;

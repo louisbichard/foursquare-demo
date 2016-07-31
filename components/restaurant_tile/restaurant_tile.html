@@ -1,5 +1,5 @@
 <div class="restaurant_tile_component">
-    <h2>{{venue.name}}</h2>
+    <h2 class="restaurant_header">{{venue.name}}</h2>
     <!-- Todo: convert to paragraph with class -->
     <div class="details">
         <div class="address">
@@ -11,11 +11,13 @@
             properties here
         </div>
     </div>
-    <div class="btn-group">
-        <button type="button" class="btn btn-default" aria-label="Left Align">Website</button>
-        <button type="button" class="btn btn-default" aria-label="Center Align">Menu</button>
-        <button type="button" class="btn btn-default" aria-label="Right Align">Order</button>
-        <button type="button" class="btn btn-default" aria-label="Justify">Phone</button>
+    <div class="actions">
+        <div class="btn-group">
+            <button type="button" class="btn btn-default" aria-label="Left Align">Website</button>
+            <button type="button" class="btn btn-default" aria-label="Center Align">Menu</button>
+            <button type="button" class="btn btn-default" aria-label="Right Align">Order</button>
+            <button type="button" class="btn btn-default" aria-label="Justify">Phone</button>
+        </div>
     </div>
     <!--     <p>
         <a href="{{venue.url}}">Website</a>

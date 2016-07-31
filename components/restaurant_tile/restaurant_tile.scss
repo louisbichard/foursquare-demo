@@ -1,19 +1,35 @@
 .restaurant_tile_component {
-    border-bottom: 1px solid grey;
-    padding: 10px 10px 10px 10px;
+    &:hover {
+        background-color: $greyscale-lightest;
+    }
+    cursor: pointer;
+    border-bottom: 1px solid $greyscale-light;
+    padding: 15px 15px 15px 15px;
+    .restaurant_header {
+        color: $greyscale-darkest;
+        margin: 0px 0px 10px 0px;
+        text-transform: uppercase;
+        font-size: 1.5em;
+    }
     .details {
-        color: red;
         .address {
+            color: $greyscale-dark;
             display: inline-block;
             vertical-align: top;
-            width: 75%;
-            color: blue;
+            width: 65%;
         }
         .properties {
+            color: $greyscale-dark;
             display: inline-block;
             vertical-align: top;
-            width: 24%;
-            color: green;
+            width: 34%;
         }
+    }
+    .actions {
+        button {
+            color: $greyscale-medium;
+        }
+        margin-left: 100px;
+        margin-top: 10px;
     }
 }
