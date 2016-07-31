@@ -9,7 +9,7 @@ $left-nav-margin: 50px;
         position: fixed;
         z-index: 1;
         width: $left-nav-width;
-        background-color: $main-color-lightest;
+        background-color: $accent-color-light;
         height: $left-nav-search-header-height;
         .search {
             &:hover {
@@ -32,8 +32,13 @@ $left-nav-margin: 50px;
         height: calc(100vh - #{ ($left-nav-search-header-height + ($left-nav-margin * 2) ) });
         .placeholder {
             text-align: center;
-            padding-top: 50px;
-            color: $accent-color-medium;
+            padding-top: 20px;
+            color: $accent-color-light;
+            .placeholder_text {
+                padding-top: 20px;
+                font-weight: 900;
+                font-size: 1.5em;
+            }
         }
     }
     display: inline-block;

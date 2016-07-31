@@ -46,7 +46,8 @@ body {
     vertical-align: top;
     width: 33%; }
     .restaurant_tile_component .details .properties .stat {
-      font-weight: 900; }
+      font-weight: 900;
+      color: #424242; }
   .restaurant_tile_component .actions {
     margin-left: 60px;
     margin-top: 10px; }
@@ -70,7 +71,7 @@ body {
     position: fixed;
     z-index: 1;
     width: 500px;
-    background-color: #E0F7FA;
+    background-color: #FFAB91;
     height: 52px; }
     .left_nav_component .search_header .search {
       color: #F4511E;
@@ -89,18 +90,11 @@ body {
     height: calc(100vh - 152px); }
     .left_nav_component .search_results .placeholder {
       text-align: center;
-      padding-top: 50px;
-      color: #FF7043; }
-
-.intro_component {
-  padding: 20px 50px 20px 50px;
-  display: inline-block;
-  margin-top: 50px;
-  margin-bottom: 50px;
-  margin-right: 50px;
-  height: calc(100vh - 100px);
-  width: calc(100vw - 655px);
-  background-color: white;
-  vertical-align: top; }
+      padding-top: 20px;
+      color: #FFAB91; }
+      .left_nav_component .search_results .placeholder .placeholder_text {
+        padding-top: 20px;
+        font-weight: 900;
+        font-size: 1.5em; }
 
 /*# sourceMappingURL=main.css.map */
